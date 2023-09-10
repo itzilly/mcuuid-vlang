@@ -49,10 +49,5 @@ pub fn mcuuid(id string) MCUUID {
 	response := http.get(url) or { return MCUUID{} }
 	data := json.decode(Player, response.body) or { return MCUUID{} }
 
-	player := MCUUID{
-		name: data.name
-		uuid: data.id
-	}
-
-	return player
+	return data
 }
