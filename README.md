@@ -36,6 +36,8 @@ If you'd like to contribute, feel free. Probably only going to be me using this 
 
 ## Version History
 
+* 0.2
+    * Remove redundant struct
 * 0.1
     * Initial Release
 
