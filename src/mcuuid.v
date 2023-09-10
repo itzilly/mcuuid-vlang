@@ -30,15 +30,9 @@ import net.http
 struct MCUUID {
 	pub:
 	name string
-	uuid string
+	uuid string [json: id]
 }
 
-
-
-struct Player {
-	name string
-	id string
-}
 
 pub fn mcuuid(id string) MCUUID {
 	mut url := ""
